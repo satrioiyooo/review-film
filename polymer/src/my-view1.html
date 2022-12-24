@@ -1,0 +1,43 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html" />
+<link rel="import" href="shared-styles.html" />
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+        background-color: rgba(123, 20, 24, 0.75);
+        padding: 180px;
+      }
+    </style>
+
+    <center>
+      <h2>Kelompok 3</h2>
+      <h3>Algoritma & Pemrograman 3</h3>
+      <p>
+        Website ini merupakan tugas project mata kuliah Algoritma dan Pemrograman 3, yaitu website untuk melihat rating film-film yang data basenya menggunakan bahasa Go yang dimana nanti kita bisa melihat rating lainnya melalui hyperlink
+        ke website IMDB.
+      </p>
+    </center>
+  </template>
+
+  <script>
+    class MyView1 extends Polymer.Element {
+      static get is() {
+        return "my-view1";
+      }
+    }
+
+    window.customElements.define(MyView1.is, MyView1);
+  </script>
+</dom-module>
